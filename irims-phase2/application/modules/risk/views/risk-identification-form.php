@@ -400,7 +400,7 @@ Risk Assessment Form
 											<textarea class="form-control input-circle wysihtml5" rows="6" id="OBJECTIVE" name="OBJECTIVE"><?php echo !empty($OBJECTIVE) ? $OBJECTIVE : ''; ?></textarea>
 										</div>
 										<div class="col-md-2">
-											<span class="tooltips" data-container="body" data-placement="right" data-html="false" data-original-title="Sasan organosasi">
+											<span id="tolSo" class="tooltips" data-container="body" data-placement="right" data-html="false" data-original-title="">
 												<a href="angularjs" target="_blank">
 												<i class="icon-info"></i>
 												</a>
@@ -429,16 +429,23 @@ Risk Assessment Form
 										<div class="col-md-6">
 											<textarea class="form-control input-circle wysihtml5" rows="6" id="WORK_PROGRAM" name="WORK_PROGRAM"><?php echo !empty($WORK_PROGRAM) ? $WORK_PROGRAM : ''; ?></textarea>
 										</div>
+										<div class="col-md-2">
+											<span id="tolPk" class="tooltips" data-container="body" data-placement="right" data-html="false" data-original-title="">
+												<a href="angularjs" target="_blank">
+												<i class="icon-info"></i>
+												</a>
+											</span>
+										</div>
 										<label class="btn btn-circle blue col-md-1 informasi-work-program">Program Kerja</label>
 									</div>
 									<div class="form-group">
-										<label class="control-label col-md-3">Aktivitas</label>
+										<label class="control-label col-md-3">Aktivitas<span class="required">*</span></label>
 										<div class="col-md-6">
 											<textarea class="form-control input-circle wysihtml5" rows="6" id="ACTIVITY" name="ACTIVITY"><?php echo !empty($ACTIVITY) ? $ACTIVITY : ''; ?></textarea>
 										</div>
 										<div class="col-md-2">
 
-											<span class="tooltips" data-container="body" data-placement="right" data-html="false" data-original-title="Activitas">
+											<span id ="tolAc" class="tooltips" data-container="body" data-placement="right" data-html="false" data-original-title="">
 												<a href="angularjs" target="_blank">
 												<i class="icon-info"></i>
 												</a>
@@ -447,27 +454,55 @@ Risk Assessment Form
 										
 									</div>
 									<div class="form-group">
-										<label class="control-label col-md-3">Lingkup</span></label>
+										<label class="control-label col-md-3">Lingkup</span><span class="required">*</span></label>
 										<div class="col-md-6">
 											<textarea class="form-control input-circle wysihtml5" rows="6" name="SCOPE"><?php echo !empty($SCOPE) ? $SCOPE : ''; ?></textarea>
 										</div>
+										<div class="col-md-2">
+											<span id="tolLing" class="tooltips" data-container="body" data-placement="right" data-html="false" data-original-title="">
+												<a href="angularjs" target="_blank">
+												<i class="icon-info"></i>
+												</a>
+											</span>
+										</div>
 									</div>
 									<div class="form-group">
-										<label class="control-label col-md-3">Kriteria</label>
+										<label class="control-label col-md-3">Kriteria<span class="required">*</span></label>
 										<div class="col-md-6">
 											<textarea class="form-control input-circle wysihtml5" rows="6" name="CRITERIA"><?php echo !empty($CRITERIA) ? $CRITERIA : ''; ?></textarea>
 										</div>
-									</div>
-									<div class="form-group">
-										<label class="control-label col-md-3">Konteks Eksternal</span></label>
-										<div class="col-md-6">
-											<textarea class="form-control input-circle wysihtml5" rows="6" name="EXTERNAL_CONTEXT"><?php echo !empty($EXTERNAL_CONTEXT) ? $EXTERNAL_CONTEXT : ''; ?></textarea>
+										<div class="col-md-2">
+											<span id="tolKri" class="tooltips" data-container="body" data-placement="right" data-html="false" data-original-title="">
+												<a href="angularjs" target="_blank">
+												<i class="icon-info"></i>
+												</a>
+											</span>
 										</div>
 									</div>
 									<div class="form-group">
-										<label class="control-label col-md-3">Konteks Internal</span></label>
+										<label class="control-label col-md-3">Konteks Eksternal</span><span class="required">*</span></label>
+										<div class="col-md-6">
+											<textarea class="form-control input-circle wysihtml5" rows="6" name="EXTERNAL_CONTEXT"><?php echo !empty($EXTERNAL_CONTEXT) ? $EXTERNAL_CONTEXT : ''; ?></textarea>
+										</div>
+										<div class="col-md-2">
+											<span id="tolKe" class="tooltips" data-container="body" data-placement="right" data-html="false" data-original-title="">
+												<a href="angularjs" target="_blank">
+												<i class="icon-info"></i>
+												</a>
+											</span>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-md-3">Konteks Internal</span><span class="required">*</span></label>
 										<div class="col-md-6">
 											<textarea class="form-control input-circle wysihtml5" rows="6" name="INTERNAL_CONTEXT"><?php echo !empty($INTERNAL_CONTEXT) ? $INTERNAL_CONTEXT : ''; ?></textarea>
+										</div>
+										<div class="col-md-2">
+											<span id="tolKi" class="tooltips" data-container="body" data-placement="right" data-html="false" data-original-title="">
+												<a href="angularjs" target="_blank">
+												<i class="icon-info"></i>
+												</a>
+											</span>
 										</div>
 									</div>
 								</div>
@@ -486,6 +521,13 @@ Risk Assessment Form
 											<textarea class="wysihtml5 form-control input-circle" rows="6" name="HAZARD" data-error-container="#editor1_error"><?php echo !empty($HAZARD) ? $HAZARD : ''; ?></textarea>
 											<div id="editor1_error">
 											</div>
+											<div class="col-md-2">
+											<!-- <span id="tolSo" class="tooltips" data-container="body" data-placement="right" data-html="false" data-original-title="Sasan organosasi">
+												<a href="angularjs" target="_blank">
+												<i class="icon-info"></i>
+												</a>
+											</span> -->
+										</div>
 										</div>
 									</div>	
 									
@@ -967,6 +1009,38 @@ Risk Assessment Form
 <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
 <script>
 	jQuery(document).ready(function() {
+		$.ajax({
+		url: "<?php echo site_url('risk/risk_identification/GetTooltipsData');?>",
+        type : "POST",
+        dataType : "json",        
+        success : function(data) {
+			
+			for (i = 0; i < data.length; ++i) {
+	            	var res = data[i];
+					
+                    if (res.label_name =='Sasaran Organisasi')
+						document.getElementById('tolSo').setAttribute('data-original-title', res.name);
+					if (res.label_name =='Program Kerja')
+						document.getElementById('tolPk').setAttribute('data-original-title', res.name);
+					if (res.label_name =='Aktivitas')
+						document.getElementById('tolAc').setAttribute('data-original-title', res.name);
+				    if (res.label_name =='Lingkup')
+				    document.getElementById('tolLing').setAttribute('data-original-title', res.name);
+					if (res.label_name =='Kriteria')
+						document.getElementById('tolKri').setAttribute('data-original-title', res.name);
+					if (res.label_name =='Konteks Eksternal')
+						document.getElementById('tolKe').setAttribute('data-original-title', res.name);	
+					if (res.label_name =='Konteks Internal')
+						document.getElementById('tolKi').setAttribute('data-original-title', res.name);	
+					
+	            }
+        },
+        error : function(data) {
+			console.log(data);
+            // do something
+        }
+    });
+
 		$('body').on("focus", ".date-picker", function(){
 			$(this).datepicker({
 	            rtl: Metronic.isRTL(),
@@ -1310,6 +1384,8 @@ Risk Assessment Form
 		return prefix == undefined ? rupiah : (rupiah ? 'Rp. ' + rupiah : '');
 	}
 
+
+	
 </script>
 </script>
 <!-- END JAVASCRIPTS -->
