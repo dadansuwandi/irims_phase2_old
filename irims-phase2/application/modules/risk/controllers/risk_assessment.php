@@ -8,6 +8,7 @@
      * @author Jaya Dianto
      */
     class risk_assessment extends Admin_Controller {
+        //test
 
         /*protected $form = array(
             'id' => array(
