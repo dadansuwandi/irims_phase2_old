@@ -1,0 +1,1 @@
+ALTER TABLE `tx_key_risk_indicator_thresholds` ADD COLUMN `INDICATOR_ID` INT(25) NULL AFTER `code`;

@@ -1,0 +1,1148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+-
+- phpMyAdmin XML Dump
+- version 3.2.4
+- http://www.phpmyadmin.net
+-
+- Host: localhost
+- Generation Time: Aug 22, 2017 at 11:06 AM
+- Server version: 5.1.41
+- PHP Version: 5.3.1
+-->
+
+<!--
+- Database: 'tekvisoft-rismasys'
+-->
+<tekvisoft-rismasys>
+  <!-- Table acl_resources -->
+    <acl_resources>
+        <id>1</id>
+        <name>welcome</name>
+        <type>module</type>
+        <created>2012-11-12 12:07:26</created>
+    </acl_resources>
+    <acl_resources>
+        <id>2</id>
+        <name>auth</name>
+        <type>module</type>
+        <created>2012-11-12 04:00:23</created>
+    </acl_resources>
+    <acl_resources>
+        <id>3</id>
+        <name>auth/login</name>
+        <type>controller</type>
+        <parent>2</parent>
+        <created>2012-11-12 12:43:42</created>
+        <modified>2012-11-12 12:44:06</modified>
+    </acl_resources>
+    <acl_resources>
+        <id>4</id>
+        <name>auth/logout</name>
+        <type>controller</type>
+        <parent>2</parent>
+        <created>2012-11-12 12:43:56</created>
+    </acl_resources>
+    <acl_resources>
+        <id>5</id>
+        <name>auth/user</name>
+        <type>controller</type>
+        <parent>2</parent>
+        <created>2012-11-12 04:07:59</created>
+        <modified>2012-11-12 08:29:29</modified>
+    </acl_resources>
+    <acl_resources>
+        <id>6</id>
+        <name>acl</name>
+        <type>module</type>
+        <created>2012-02-02 13:47:43</created>
+    </acl_resources>
+    <acl_resources>
+        <id>7</id>
+        <name>acl/resource</name>
+        <type>controller</type>
+        <parent>6</parent>
+        <created>2012-02-02 13:47:57</created>
+    </acl_resources>
+    <acl_resources>
+        <id>8</id>
+        <name>acl/resource/index</name>
+        <type>action</type>
+        <parent>7</parent>
+        <created>2012-02-02 13:48:21</created>
+    </acl_resources>
+    <acl_resources>
+        <id>9</id>
+        <name>acl/resource/add</name>
+        <type>action</type>
+        <parent>7</parent>
+        <created>2012-02-02 13:48:35</created>
+        <modified>2012-10-16 17:26:12</modified>
+    </acl_resources>
+    <acl_resources>
+        <id>10</id>
+        <name>acl/resource/edit</name>
+        <type>action</type>
+        <parent>7</parent>
+        <created>2012-02-02 13:48:50</created>
+        <modified>2012-07-09 18:44:38</modified>
+    </acl_resources>
+    <acl_resources>
+        <id>11</id>
+        <name>acl/resource/delete</name>
+        <type>action</type>
+        <parent>7</parent>
+        <created>2012-02-02 13:49:06</created>
+    </acl_resources>
+    <acl_resources>
+        <id>12</id>
+        <name>acl/role</name>
+        <type>controller</type>
+        <parent>6</parent>
+        <created>2012-07-12 17:54:16</created>
+    </acl_resources>
+    <acl_resources>
+        <id>13</id>
+        <name>acl/role/index</name>
+        <type>action</type>
+        <parent>12</parent>
+        <created>2012-07-12 17:55:29</created>
+    </acl_resources>
+    <acl_resources>
+        <id>14</id>
+        <name>acl/role/add</name>
+        <type>action</type>
+        <parent>12</parent>
+        <created>2012-07-12 17:56:00</created>
+    </acl_resources>
+    <acl_resources>
+        <id>15</id>
+        <name>acl/role/edit</name>
+        <type>action</type>
+        <parent>12</parent>
+        <created>2012-07-12 17:56:19</created>
+    </acl_resources>
+    <acl_resources>
+        <id>16</id>
+        <name>acl/role/delete</name>
+        <type>action</type>
+        <parent>12</parent>
+        <created>2012-07-12 17:56:55</created>
+    </acl_resources>
+    <acl_resources>
+        <id>17</id>
+        <name>acl/rule</name>
+        <type>controller</type>
+        <parent>6</parent>
+        <created>2012-07-12 17:53:04</created>
+    </acl_resources>
+    <acl_resources>
+        <id>18</id>
+        <name>acl/rule/edit</name>
+        <type>action</type>
+        <parent>17</parent>
+        <created>2012-07-12 17:53:25</created>
+    </acl_resources>
+    <acl_resources>
+        <id>19</id>
+        <name>auth/user/add</name>
+        <type>action</type>
+        <parent>5</parent>
+        <created>2017-08-15 15:43:06</created>
+    </acl_resources>
+    <acl_resources>
+        <id>20</id>
+        <name>auth/user/index</name>
+        <type>action</type>
+        <parent>5</parent>
+        <created>2017-08-15 15:43:39</created>
+    </acl_resources>
+    <acl_resources>
+        <id>21</id>
+        <name>auth/user/profile</name>
+        <type>action</type>
+        <parent>5</parent>
+        <created>2017-08-15 15:44:04</created>
+    </acl_resources>
+    <acl_resources>
+        <id>22</id>
+        <name>master</name>
+        <type>module</type>
+        <created>2017-08-15 15:44:36</created>
+    </acl_resources>
+    <acl_resources>
+        <id>23</id>
+        <name>master/setting</name>
+        <type>controller</type>
+        <parent>22</parent>
+        <created>2017-08-15 15:45:13</created>
+    </acl_resources>
+    <acl_resources>
+        <id>24</id>
+        <name>master/setting/add</name>
+        <type>action</type>
+        <parent>23</parent>
+        <created>2017-08-15 15:45:42</created>
+    </acl_resources>
+    <acl_resources>
+        <id>25</id>
+        <name>master/setting/delete</name>
+        <type>action</type>
+        <parent>23</parent>
+        <created>2017-08-15 15:46:11</created>
+    </acl_resources>
+    <acl_resources>
+        <id>26</id>
+        <name>master/setting/edit</name>
+        <type>action</type>
+        <parent>23</parent>
+        <created>2017-08-15 15:46:35</created>
+    </acl_resources>
+    <acl_resources>
+        <id>27</id>
+        <name>master/setting/index</name>
+        <type>action</type>
+        <parent>23</parent>
+        <created>2017-08-15 15:46:59</created>
+    </acl_resources>
+    <acl_resources>
+        <id>28</id>
+        <name>master/status</name>
+        <type>controller</type>
+        <parent>22</parent>
+        <created>2017-08-15 15:49:24</created>
+    </acl_resources>
+    <acl_resources>
+        <id>29</id>
+        <name>master/status/add</name>
+        <type>action</type>
+        <parent>28</parent>
+        <created>2017-08-15 15:50:02</created>
+    </acl_resources>
+    <acl_resources>
+        <id>30</id>
+        <name>master/status/delete</name>
+        <type>action</type>
+        <parent>28</parent>
+        <created>2017-08-15 15:50:21</created>
+    </acl_resources>
+    <acl_resources>
+        <id>31</id>
+        <name>master/status/edit</name>
+        <type>action</type>
+        <parent>28</parent>
+        <created>2017-08-15 15:50:40</created>
+    </acl_resources>
+    <acl_resources>
+        <id>32</id>
+        <name>master/status/index</name>
+        <type>action</type>
+        <parent>28</parent>
+        <created>2017-08-15 15:50:58</created>
+    </acl_resources>
+    <acl_resources>
+        <id>33</id>
+        <name>master/unit</name>
+        <type>controller</type>
+        <parent>22</parent>
+        <created>2017-08-15 15:51:30</created>
+    </acl_resources>
+    <acl_resources>
+        <id>34</id>
+        <name>master/unit/add</name>
+        <type>action</type>
+        <parent>33</parent>
+        <created>2017-08-15 15:52:03</created>
+    </acl_resources>
+    <acl_resources>
+        <id>35</id>
+        <name>master/unit/delete</name>
+        <type>action</type>
+        <parent>33</parent>
+        <created>2017-08-15 15:52:20</created>
+    </acl_resources>
+    <acl_resources>
+        <id>36</id>
+        <name>master/unit/edit</name>
+        <type>action</type>
+        <parent>33</parent>
+        <created>2017-08-15 15:52:34</created>
+    </acl_resources>
+    <acl_resources>
+        <id>37</id>
+        <name>master/unit/index</name>
+        <type>action</type>
+        <parent>33</parent>
+        <created>2017-08-15 15:52:49</created>
+    </acl_resources>
+  <!-- Table acl_roles -->
+    <acl_roles>
+        <id>1</id>
+        <name>Administrator</name>
+        <created>2011-12-27 12:00:00</created>
+    </acl_roles>
+    <acl_roles>
+        <id>2</id>
+        <name>Guest</name>
+        <created>2011-12-27 12:00:00</created>
+    </acl_roles>
+    <acl_roles>
+        <id>3</id>
+        <name>Staf</name>
+        <created>2012-11-12 04:30:02</created>
+        <modified>2012-11-12 04:30:39</modified>
+    </acl_roles>
+    <acl_roles>
+        <id>4</id>
+        <name>Manager</name>
+        <created>2012-11-12 04:30:24</created>
+    </acl_roles>
+  <!-- Table acl_role_parents -->
+    <acl_role_parents>
+        <role_id>3</role_id>
+        <parent>2</parent>
+        <order>0</order>
+    </acl_role_parents>
+    <acl_role_parents>
+        <role_id>4</role_id>
+        <parent>3</parent>
+        <order>0</order>
+    </acl_role_parents>
+  <!-- Table acl_rules -->
+    <acl_rules>
+        <role_id>2</role_id>
+        <resource_id>1</resource_id>
+        <access>allow</access>
+    </acl_rules>
+    <acl_rules>
+        <role_id>2</role_id>
+        <resource_id>3</resource_id>
+        <access>allow</access>
+    </acl_rules>
+    <acl_rules>
+        <role_id>2</role_id>
+        <resource_id>4</resource_id>
+        <access>allow</access>
+    </acl_rules>
+    <acl_rules>
+        <role_id>4</role_id>
+        <resource_id>2</resource_id>
+        <access>allow</access>
+    </acl_rules>
+    <acl_rules>
+        <role_id>4</role_id>
+        <resource_id>5</resource_id>
+        <access>allow</access>
+    </acl_rules>
+  <!-- Table auth_autologin -->
+  <!-- Table auth_users -->
+    <auth_users>
+        <id>1</id>
+        <first_name>Administrator</first_name>
+        <last_name>Tea</last_name>
+        <username>admin</username>
+        <email>admin@tekvisoft.com</email>
+        <password>$2a$08$8S0q0D70mS4lJ3Rp33eEK.Sxbifh6tooNU0r67E23uof6UjHBhb6G</password>
+        <lang>en</lang>
+        <registered>2012-03-15 19:23:59</registered>
+        <role_id>1</role_id>
+        <expired>2039-07-01 00:00:00</expired>
+        <status>1</status>
+        <created_by>0</created_by>
+        <created_date>0000-00-00 00:00:00</created_date>
+        <updated_by>0</updated_by>
+        <updated_date>0000-00-00 00:00:00</updated_date>
+        <photo></photo>
+        <unit_id>1</unit_id>
+    </auth_users>
+    <auth_users>
+        <id>1002</id>
+        <first_name>Diane</first_name>
+        <last_name>Murphy</last_name>
+        <username>dmurphy</username>
+        <email>dmurphy@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+        <expired>0000-00-00 00:00:00</expired>
+        <status>1</status>
+        <created_by>0</created_by>
+        <created_date>0000-00-00 00:00:00</created_date>
+        <updated_by>0</updated_by>
+        <updated_date>0000-00-00 00:00:00</updated_date>
+        <photo></photo>
+        <unit_id>0</unit_id>
+    </auth_users>
+    <auth_users>
+        <id>1056</id>
+        <first_name>Mary</first_name>
+        <last_name>Patterson</last_name>
+        <username>mpatterso</username>
+        <email>mpatterso@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+        <expired>0000-00-00 00:00:00</expired>
+        <status>1</status>
+        <created_by>0</created_by>
+        <created_date>0000-00-00 00:00:00</created_date>
+        <updated_by>0</updated_by>
+        <updated_date>0000-00-00 00:00:00</updated_date>
+        <photo></photo>
+        <unit_id>0</unit_id>
+    </auth_users>
+    <auth_users>
+        <id>1076</id>
+        <first_name>Jeff</first_name>
+        <last_name>Firrelli</last_name>
+        <username>jeff.firrelli</username>
+        <email>jeff.firrelli@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+        <expired>0000-00-00 00:00:00</expired>
+        <status>1</status>
+        <created_by>0</created_by>
+        <created_date>0000-00-00 00:00:00</created_date>
+        <updated_by>0</updated_by>
+        <updated_date>0000-00-00 00:00:00</updated_date>
+        <photo></photo>
+        <unit_id>0</unit_id>
+    </auth_users>
+    <auth_users>
+        <id>1088</id>
+        <first_name>William</first_name>
+        <last_name>Patterson</last_name>
+        <username>wpatterson</username>
+        <email>wpatterson@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+        <expired>0000-00-00 00:00:00</expired>
+        <status>1</status>
+        <created_by>0</created_by>
+        <created_date>0000-00-00 00:00:00</created_date>
+        <updated_by>0</updated_by>
+        <updated_date>0000-00-00 00:00:00</updated_date>
+        <photo></photo>
+        <unit_id>0</unit_id>
+    </auth_users>
+    <auth_users>
+        <id>1102</id>
+        <first_name>Gerard</first_name>
+        <last_name>Bondur</last_name>
+        <username>gbondur</username>
+        <email>gbondur@classicmodelcars.com</email>
+        <password>$2a$08$/9GPAwtVkFug2y5yBIhmPOZWSev.Myt.ruNENXo9DT4VrqTwNBE2K</password>
+        <lang>en</lang>
+        <registered>2012-03-01 05:54:30</registered>
+        <expired>0000-00-00 00:00:00</expired>
+        <status>1</status>
+        <created_by>0</created_by>
+        <created_date>0000-00-00 00:00:00</created_date>
+        <updated_by>0</updated_by>
+        <updated_date>0000-00-00 00:00:00</updated_date>
+        <photo></photo>
+        <unit_id>0</unit_id>
+    </auth_users>
+    <auth_users>
+        <id>1143</id>
+        <first_name>Anthony</first_name>
+        <last_name>Bow</last_name>
+        <username>abow</username>
+        <email>abow@classicmodelcars.com</email>
+        <password>$2a$08$w6grERmP9T3r7FOBAuxLjO0l9H05ZgFTgGUY26hA89/g/Wq.QLqye</password>
+        <registered>2012-03-01 05:54:30</registered>
+        <expired>0000-00-00 00:00:00</expired>
+        <status>1</status>
+        <created_by>0</created_by>
+        <created_date>0000-00-00 00:00:00</created_date>
+        <updated_by>0</updated_by>
+        <updated_date>0000-00-00 00:00:00</updated_date>
+        <photo></photo>
+        <unit_id>0</unit_id>
+    </auth_users>
+    <auth_users>
+        <id>1165</id>
+        <first_name>Leslie</first_name>
+        <last_name>Jennings</last_name>
+        <username>ljennings</username>
+        <email>ljennings@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+        <expired>0000-00-00 00:00:00</expired>
+        <status>1</status>
+        <created_by>0</created_by>
+        <created_date>0000-00-00 00:00:00</created_date>
+        <updated_by>0</updated_by>
+        <updated_date>0000-00-00 00:00:00</updated_date>
+        <photo></photo>
+        <unit_id>0</unit_id>
+    </auth_users>
+    <auth_users>
+        <id>1166</id>
+        <first_name>Leslie</first_name>
+        <last_name>Thompson</last_name>
+        <username>lthompson</username>
+        <email>lthompson@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+        <expired>0000-00-00 00:00:00</expired>
+        <status>1</status>
+        <created_by>0</created_by>
+        <created_date>0000-00-00 00:00:00</created_date>
+        <updated_by>0</updated_by>
+        <updated_date>0000-00-00 00:00:00</updated_date>
+        <photo></photo>
+        <unit_id>0</unit_id>
+    </auth_users>
+    <auth_users>
+        <id>1188</id>
+        <first_name>Julie</first_name>
+        <last_name>Firrelli</last_name>
+        <username>julie.firrelli</username>
+        <email>julie.firrelli@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+        <expired>0000-00-00 00:00:00</expired>
+        <status>1</status>
+        <created_by>0</created_by>
+        <created_date>0000-00-00 00:00:00</created_date>
+        <updated_by>0</updated_by>
+        <updated_date>0000-00-00 00:00:00</updated_date>
+        <photo></photo>
+        <unit_id>0</unit_id>
+    </auth_users>
+    <auth_users>
+        <id>1216</id>
+        <first_name>Steve</first_name>
+        <last_name>Patterson</last_name>
+        <username>spatterson</username>
+        <email>spatterson@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+        <expired>0000-00-00 00:00:00</expired>
+        <status>1</status>
+        <created_by>0</created_by>
+        <created_date>0000-00-00 00:00:00</created_date>
+        <updated_by>0</updated_by>
+        <updated_date>0000-00-00 00:00:00</updated_date>
+        <photo></photo>
+        <unit_id>0</unit_id>
+    </auth_users>
+    <auth_users>
+        <id>1337</id>
+        <first_name>Loui</first_name>
+        <last_name>Bondur</last_name>
+        <username>lbondur</username>
+        <email>lbondur@classicmodelcars.com</email>
+        <password>$2a$08$tGx5NElKJIm2hkX3OwRYSOp/VZ/r.oaB2YHdK.HBCDM921rfUVAta</password>
+        <registered>2012-03-01 05:54:30</registered>
+        <expired>0000-00-00 00:00:00</expired>
+        <status>1</status>
+        <created_by>0</created_by>
+        <created_date>0000-00-00 00:00:00</created_date>
+        <updated_by>0</updated_by>
+        <updated_date>0000-00-00 00:00:00</updated_date>
+        <photo></photo>
+        <unit_id>0</unit_id>
+    </auth_users>
+    <auth_users>
+        <id>1370</id>
+        <first_name>Gerard</first_name>
+        <last_name>Hernandez</last_name>
+        <username>ghernande</username>
+        <email>ghernande@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+        <expired>0000-00-00 00:00:00</expired>
+        <status>1</status>
+        <created_by>0</created_by>
+        <created_date>0000-00-00 00:00:00</created_date>
+        <updated_by>0</updated_by>
+        <updated_date>0000-00-00 00:00:00</updated_date>
+        <photo></photo>
+        <unit_id>0</unit_id>
+    </auth_users>
+    <auth_users>
+        <id>1401</id>
+        <first_name>Pamela</first_name>
+        <last_name>Castillo</last_name>
+        <username>pcastillo</username>
+        <email>pcastillo@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+        <expired>0000-00-00 00:00:00</expired>
+        <status>1</status>
+        <created_by>0</created_by>
+        <created_date>0000-00-00 00:00:00</created_date>
+        <updated_by>0</updated_by>
+        <updated_date>0000-00-00 00:00:00</updated_date>
+        <photo></photo>
+        <unit_id>0</unit_id>
+    </auth_users>
+    <auth_users>
+        <id>1501</id>
+        <first_name>Larry</first_name>
+        <last_name>Bott</last_name>
+        <username>lbott</username>
+        <email>lbott@classicmodelcars.com</email>
+        <password>$2a$08$Njus3nhJ9bX5YYGra6xRu.ldrTylOMebKHXW/Wfl0o2wMvtppY476</password>
+        <registered>2012-03-01 05:54:30</registered>
+        <expired>0000-00-00 00:00:00</expired>
+        <status>1</status>
+        <created_by>0</created_by>
+        <created_date>0000-00-00 00:00:00</created_date>
+        <updated_by>0</updated_by>
+        <updated_date>0000-00-00 00:00:00</updated_date>
+        <photo></photo>
+        <unit_id>0</unit_id>
+    </auth_users>
+    <auth_users>
+        <id>1504</id>
+        <first_name>Barry</first_name>
+        <last_name>Jones</last_name>
+        <username>bjones</username>
+        <email>bjones@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+        <expired>0000-00-00 00:00:00</expired>
+        <status>1</status>
+        <created_by>0</created_by>
+        <created_date>0000-00-00 00:00:00</created_date>
+        <updated_by>0</updated_by>
+        <updated_date>0000-00-00 00:00:00</updated_date>
+        <photo></photo>
+        <unit_id>0</unit_id>
+    </auth_users>
+    <auth_users>
+        <id>1611</id>
+        <first_name>Andy</first_name>
+        <last_name>Fixter</last_name>
+        <username>afixter</username>
+        <email>afixter@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+        <expired>0000-00-00 00:00:00</expired>
+        <status>1</status>
+        <created_by>0</created_by>
+        <created_date>0000-00-00 00:00:00</created_date>
+        <updated_by>0</updated_by>
+        <updated_date>0000-00-00 00:00:00</updated_date>
+        <photo></photo>
+        <unit_id>0</unit_id>
+    </auth_users>
+    <auth_users>
+        <id>1612</id>
+        <first_name>Peter</first_name>
+        <last_name>Marsh</last_name>
+        <username>pmarsh</username>
+        <email>pmarsh@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+        <expired>0000-00-00 00:00:00</expired>
+        <status>1</status>
+        <created_by>0</created_by>
+        <created_date>0000-00-00 00:00:00</created_date>
+        <updated_by>0</updated_by>
+        <updated_date>0000-00-00 00:00:00</updated_date>
+        <photo></photo>
+        <unit_id>0</unit_id>
+    </auth_users>
+    <auth_users>
+        <id>1619</id>
+        <first_name>Tom</first_name>
+        <last_name>King</last_name>
+        <username>tking</username>
+        <email>tking@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+        <expired>0000-00-00 00:00:00</expired>
+        <status>1</status>
+        <created_by>0</created_by>
+        <created_date>0000-00-00 00:00:00</created_date>
+        <updated_by>0</updated_by>
+        <updated_date>0000-00-00 00:00:00</updated_date>
+        <photo></photo>
+        <unit_id>0</unit_id>
+    </auth_users>
+    <auth_users>
+        <id>1621</id>
+        <first_name>Mami</first_name>
+        <last_name>Nishi</last_name>
+        <username>mnishi</username>
+        <email>mnishi@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+        <expired>0000-00-00 00:00:00</expired>
+        <status>1</status>
+        <created_by>0</created_by>
+        <created_date>0000-00-00 00:00:00</created_date>
+        <updated_by>0</updated_by>
+        <updated_date>0000-00-00 00:00:00</updated_date>
+        <photo></photo>
+        <unit_id>0</unit_id>
+    </auth_users>
+    <auth_users>
+        <id>1625</id>
+        <first_name>Yoshimi</first_name>
+        <last_name>Kato</last_name>
+        <username>ykato</username>
+        <email>ykato@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+        <expired>0000-00-00 00:00:00</expired>
+        <status>1</status>
+        <created_by>0</created_by>
+        <created_date>0000-00-00 00:00:00</created_date>
+        <updated_by>0</updated_by>
+        <updated_date>0000-00-00 00:00:00</updated_date>
+        <photo></photo>
+        <unit_id>0</unit_id>
+    </auth_users>
+    <auth_users>
+        <id>1702</id>
+        <first_name>Martin</first_name>
+        <last_name>Gerard</last_name>
+        <username>mgerard</username>
+        <email>mgerard@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+        <expired>0000-00-00 00:00:00</expired>
+        <status>1</status>
+        <created_by>0</created_by>
+        <created_date>0000-00-00 00:00:00</created_date>
+        <updated_by>0</updated_by>
+        <updated_date>0000-00-00 00:00:00</updated_date>
+        <photo></photo>
+        <unit_id>0</unit_id>
+    </auth_users>
+    <auth_users>
+        <id>1703</id>
+        <first_name>Ardi</first_name>
+        <last_name>Soebrata</last_name>
+        <username>ardissoebrata</username>
+        <email>ardissoebrata@gmail.com</email>
+        <password>$2a$08$KZRME/RCMM.ikhJvS9IQtOD/qQcM/922akreUjQ7fgL6BanTAwsIm</password>
+        <lang>en</lang>
+        <registered>2012-03-09 12:57:48</registered>
+        <role_id>4</role_id>
+        <expired>0000-00-00 00:00:00</expired>
+        <status>1</status>
+        <created_by>0</created_by>
+        <created_date>0000-00-00 00:00:00</created_date>
+        <updated_by>0</updated_by>
+        <updated_date>0000-00-00 00:00:00</updated_date>
+        <photo></photo>
+        <unit_id>0</unit_id>
+    </auth_users>
+    <auth_users>
+        <id>1706</id>
+        <first_name>Test</first_name>
+        <last_name>TestLast</last_name>
+        <username>test</username>
+        <email>test@test.com</email>
+        <password>test</password>
+        <lang>en</lang>
+        <registered>2012-11-09 10:58:34</registered>
+        <role_id>2</role_id>
+        <expired>0000-00-00 00:00:00</expired>
+        <status>1</status>
+        <created_by>0</created_by>
+        <created_date>0000-00-00 00:00:00</created_date>
+        <updated_by>0</updated_by>
+        <updated_date>0000-00-00 00:00:00</updated_date>
+        <photo></photo>
+        <unit_id>0</unit_id>
+    </auth_users>
+  <!-- Table auth_users_master -->
+    <auth_users_master>
+        <id>1002</id>
+        <first_name>Diane</first_name>
+        <last_name>Murphy</last_name>
+        <username>dmurphy</username>
+        <email>dmurphy@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+    </auth_users_master>
+    <auth_users_master>
+        <id>1056</id>
+        <first_name>Mary</first_name>
+        <last_name>Patterson</last_name>
+        <username>mpatterso</username>
+        <email>mpatterso@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+    </auth_users_master>
+    <auth_users_master>
+        <id>1076</id>
+        <first_name>Jeff</first_name>
+        <last_name>Firrelli</last_name>
+        <username>jeff.firrelli</username>
+        <email>jeff.firrelli@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+    </auth_users_master>
+    <auth_users_master>
+        <id>1088</id>
+        <first_name>William</first_name>
+        <last_name>Patterson</last_name>
+        <username>wpatterson</username>
+        <email>wpatterson@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+    </auth_users_master>
+    <auth_users_master>
+        <id>1102</id>
+        <first_name>Gerard</first_name>
+        <last_name>Bondur</last_name>
+        <username>gbondur</username>
+        <email>gbondur@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+    </auth_users_master>
+    <auth_users_master>
+        <id>1143</id>
+        <first_name>Anthony</first_name>
+        <last_name>Bow</last_name>
+        <username>abow</username>
+        <email>abow@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+    </auth_users_master>
+    <auth_users_master>
+        <id>1165</id>
+        <first_name>Leslie</first_name>
+        <last_name>Jennings</last_name>
+        <username>ljennings</username>
+        <email>ljennings@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+    </auth_users_master>
+    <auth_users_master>
+        <id>1166</id>
+        <first_name>Leslie</first_name>
+        <last_name>Thompson</last_name>
+        <username>lthompson</username>
+        <email>lthompson@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+    </auth_users_master>
+    <auth_users_master>
+        <id>1188</id>
+        <first_name>Julie</first_name>
+        <last_name>Firrelli</last_name>
+        <username>julie.firrelli</username>
+        <email>julie.firrelli@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+    </auth_users_master>
+    <auth_users_master>
+        <id>1216</id>
+        <first_name>Steve</first_name>
+        <last_name>Patterson</last_name>
+        <username>spatterson</username>
+        <email>spatterson@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+    </auth_users_master>
+    <auth_users_master>
+        <id>1286</id>
+        <first_name>Foon Yue</first_name>
+        <last_name>Tseng</last_name>
+        <username>ftseng</username>
+        <email>ftseng@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+    </auth_users_master>
+    <auth_users_master>
+        <id>1323</id>
+        <first_name>George</first_name>
+        <last_name>Vanauf</last_name>
+        <username>gvanauf</username>
+        <email>gvanauf@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+    </auth_users_master>
+    <auth_users_master>
+        <id>1337</id>
+        <first_name>Loui</first_name>
+        <last_name>Bondur</last_name>
+        <username>lbondur</username>
+        <email>lbondur@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+    </auth_users_master>
+    <auth_users_master>
+        <id>1370</id>
+        <first_name>Gerard</first_name>
+        <last_name>Hernandez</last_name>
+        <username>ghernande</username>
+        <email>ghernande@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+    </auth_users_master>
+    <auth_users_master>
+        <id>1401</id>
+        <first_name>Pamela</first_name>
+        <last_name>Castillo</last_name>
+        <username>pcastillo</username>
+        <email>pcastillo@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+    </auth_users_master>
+    <auth_users_master>
+        <id>1501</id>
+        <first_name>Larry</first_name>
+        <last_name>Bott</last_name>
+        <username>lbott</username>
+        <email>lbott@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+    </auth_users_master>
+    <auth_users_master>
+        <id>1504</id>
+        <first_name>Barry</first_name>
+        <last_name>Jones</last_name>
+        <username>bjones</username>
+        <email>bjones@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+    </auth_users_master>
+    <auth_users_master>
+        <id>1611</id>
+        <first_name>Andy</first_name>
+        <last_name>Fixter</last_name>
+        <username>afixter</username>
+        <email>afixter@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+    </auth_users_master>
+    <auth_users_master>
+        <id>1612</id>
+        <first_name>Peter</first_name>
+        <last_name>Marsh</last_name>
+        <username>pmarsh</username>
+        <email>pmarsh@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+    </auth_users_master>
+    <auth_users_master>
+        <id>1619</id>
+        <first_name>Tom</first_name>
+        <last_name>King</last_name>
+        <username>tking</username>
+        <email>tking@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+    </auth_users_master>
+    <auth_users_master>
+        <id>1621</id>
+        <first_name>Mami</first_name>
+        <last_name>Nishi</last_name>
+        <username>mnishi</username>
+        <email>mnishi@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+    </auth_users_master>
+    <auth_users_master>
+        <id>1625</id>
+        <first_name>Yoshimi</first_name>
+        <last_name>Kato</last_name>
+        <username>ykato</username>
+        <email>ykato@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+    </auth_users_master>
+    <auth_users_master>
+        <id>1702</id>
+        <first_name>Martin</first_name>
+        <last_name>Gerard</last_name>
+        <username>mgerard</username>
+        <email>mgerard@classicmodelcars.com</email>
+        <password></password>
+        <registered>2012-03-01 05:54:30</registered>
+    </auth_users_master>
+  <!-- Table ci_sessions -->
+    <ci_sessions>
+        <session_id>246b6d6f3e3ec81d15fdef691b6a76a8</session_id>
+        <ip_address>::1</ip_address>
+        <user_agent>Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</user_agent>
+        <last_activity>1502796932</last_activity>
+        <user_data>a:9:{s:9:&quot;user_data&quot;;s:0:&quot;&quot;;s:9:&quot;role_name&quot;;s:13:&quot;Administrator&quot;;s:9:&quot;auth_user&quot;;s:1:&quot;1&quot;;s:13:&quot;auth_loggedin&quot;;b:1;s:4:&quot;lang&quot;;s:2:&quot;en&quot;;s:7:&quot;unit_id&quot;;s:1:&quot;1&quot;;s:7:&quot;role_id&quot;;s:1:&quot;1&quot;;s:10:&quot;registered&quot;;s:19:&quot;2012-03-15 19:23:59&quot;;s:7:&quot;expired&quot;;s:19:&quot;2039-07-01 00:00:00&quot;;}</user_data>
+    </ci_sessions>
+    <ci_sessions>
+        <session_id>24a985171ed1d030aae3b407df6922a3</session_id>
+        <ip_address>::1</ip_address>
+        <user_agent>Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</user_agent>
+        <last_activity>1502786878</last_activity>
+        <user_data>a:2:{s:9:&quot;user_data&quot;;s:0:&quot;&quot;;s:9:&quot;role_name&quot;;s:5:&quot;Guest&quot;;}</user_data>
+    </ci_sessions>
+    <ci_sessions>
+        <session_id>2cdb4aac10d574c22cee8cd4c99814ff</session_id>
+        <ip_address>::1</ip_address>
+        <user_agent>Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</user_agent>
+        <last_activity>1502796932</last_activity>
+        <user_data>a:2:{s:9:&quot;user_data&quot;;s:0:&quot;&quot;;s:9:&quot;role_name&quot;;s:5:&quot;Guest&quot;;}</user_data>
+    </ci_sessions>
+    <ci_sessions>
+        <session_id>577a6e8d44eb1310b6901b3852f41c2b</session_id>
+        <ip_address>192.168.1.8</ip_address>
+        <user_agent>Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36</user_agent>
+        <last_activity>1502798942</last_activity>
+        <user_data>a:9:{s:9:&quot;user_data&quot;;s:0:&quot;&quot;;s:9:&quot;role_name&quot;;s:13:&quot;Administrator&quot;;s:9:&quot;auth_user&quot;;s:1:&quot;1&quot;;s:13:&quot;auth_loggedin&quot;;b:1;s:4:&quot;lang&quot;;s:2:&quot;en&quot;;s:7:&quot;unit_id&quot;;s:1:&quot;1&quot;;s:7:&quot;role_id&quot;;s:1:&quot;1&quot;;s:10:&quot;registered&quot;;s:19:&quot;2012-03-15 19:23:59&quot;;s:7:&quot;expired&quot;;s:19:&quot;2039-07-01 00:00:00&quot;;}</user_data>
+    </ci_sessions>
+    <ci_sessions>
+        <session_id>578828454f714bcbb1441ba9ef2e10ff</session_id>
+        <ip_address>192.168.1.11</ip_address>
+        <user_agent>Mozilla/5.0 (Linux; Android 6.0; Infinix X510 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 </user_agent>
+        <last_activity>1502797130</last_activity>
+        <user_data>a:2:{s:9:&quot;user_data&quot;;s:0:&quot;&quot;;s:9:&quot;role_name&quot;;s:5:&quot;Guest&quot;;}</user_data>
+    </ci_sessions>
+    <ci_sessions>
+        <session_id>688ef6751d407b3647aa4b9b3f6cfebc</session_id>
+        <ip_address>::1</ip_address>
+        <user_agent>Mozilla/5.0 (Windows NT 6.1; rv:54.0) Gecko/20100101 Firefox/54.0</user_agent>
+        <last_activity>1503291383</last_activity>
+        <user_data>a:9:{s:9:&quot;user_data&quot;;s:0:&quot;&quot;;s:9:&quot;role_name&quot;;s:13:&quot;Administrator&quot;;s:9:&quot;auth_user&quot;;s:1:&quot;1&quot;;s:13:&quot;auth_loggedin&quot;;b:1;s:4:&quot;lang&quot;;s:2:&quot;en&quot;;s:7:&quot;unit_id&quot;;s:1:&quot;1&quot;;s:7:&quot;role_id&quot;;s:1:&quot;1&quot;;s:10:&quot;registered&quot;;s:19:&quot;2012-03-15 19:23:59&quot;;s:7:&quot;expired&quot;;s:19:&quot;2039-07-01 00:00:00&quot;;}</user_data>
+    </ci_sessions>
+    <ci_sessions>
+        <session_id>76e7f75559c0f0894d73bb4e0d9d24cb</session_id>
+        <ip_address>::1</ip_address>
+        <user_agent>Mozilla/5.0 (Windows NT 6.1; rv:54.0) Gecko/20100101 Firefox/54.0</user_agent>
+        <last_activity>1502786973</last_activity>
+        <user_data>a:9:{s:9:&quot;user_data&quot;;s:0:&quot;&quot;;s:9:&quot;role_name&quot;;s:5:&quot;Guest&quot;;s:9:&quot;auth_user&quot;;b:0;s:13:&quot;auth_loggedin&quot;;b:0;s:4:&quot;lang&quot;;s:2:&quot;en&quot;;s:7:&quot;unit_id&quot;;s:1:&quot;1&quot;;s:7:&quot;role_id&quot;;s:1:&quot;1&quot;;s:10:&quot;registered&quot;;s:19:&quot;2012-03-15 19:23:59&quot;;s:7:&quot;expired&quot;;s:19:&quot;2039-07-01 00:00:00&quot;;}</user_data>
+    </ci_sessions>
+    <ci_sessions>
+        <session_id>918908db7bb06ccc182b40404438719b</session_id>
+        <ip_address>192.168.1.4</ip_address>
+        <user_agent>Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Version/10.0 Mobile/14G</user_agent>
+        <last_activity>1502797126</last_activity>
+        <user_data>a:9:{s:9:&quot;user_data&quot;;s:0:&quot;&quot;;s:9:&quot;role_name&quot;;s:13:&quot;Administrator&quot;;s:9:&quot;auth_user&quot;;s:1:&quot;1&quot;;s:13:&quot;auth_loggedin&quot;;b:1;s:4:&quot;lang&quot;;s:2:&quot;en&quot;;s:7:&quot;unit_id&quot;;s:1:&quot;1&quot;;s:7:&quot;role_id&quot;;s:1:&quot;1&quot;;s:10:&quot;registered&quot;;s:19:&quot;2012-03-15 19:23:59&quot;;s:7:&quot;expired&quot;;s:19:&quot;2039-07-01 00:00:00&quot;;}</user_data>
+    </ci_sessions>
+    <ci_sessions>
+        <session_id>a1cc39882cfda5ba8054336f26a4d008</session_id>
+        <ip_address>::1</ip_address>
+        <user_agent>Mozilla/5.0 (Windows NT 6.1; rv:54.0) Gecko/20100101 Firefox/54.0</user_agent>
+        <last_activity>1502782632</last_activity>
+        <user_data>a:9:{s:9:&quot;user_data&quot;;s:0:&quot;&quot;;s:9:&quot;role_name&quot;;s:13:&quot;Administrator&quot;;s:9:&quot;auth_user&quot;;s:4:&quot;1704&quot;;s:13:&quot;auth_loggedin&quot;;b:1;s:4:&quot;lang&quot;;s:2:&quot;en&quot;;s:7:&quot;unit_id&quot;;s:1:&quot;0&quot;;s:7:&quot;role_id&quot;;s:1:&quot;1&quot;;s:10:&quot;registered&quot;;s:19:&quot;2012-03-15 19:23:59&quot;;s:7:&quot;expired&quot;;s:19:&quot;2039-07-01 00:00:00&quot;;}</user_data>
+    </ci_sessions>
+    <ci_sessions>
+        <session_id>acbec261afaa4d0cea7c7570ec5ea41e</session_id>
+        <ip_address>::1</ip_address>
+        <user_agent>Mozilla/5.0 (Windows NT 6.1; rv:54.0) Gecko/20100101 Firefox/54.0</user_agent>
+        <last_activity>1502781942</last_activity>
+        <user_data>a:9:{s:9:&quot;user_data&quot;;s:0:&quot;&quot;;s:9:&quot;role_name&quot;;s:13:&quot;Administrator&quot;;s:9:&quot;auth_user&quot;;s:4:&quot;1704&quot;;s:13:&quot;auth_loggedin&quot;;b:1;s:4:&quot;lang&quot;;s:2:&quot;en&quot;;s:7:&quot;unit_id&quot;;s:1:&quot;0&quot;;s:7:&quot;role_id&quot;;s:1:&quot;1&quot;;s:10:&quot;registered&quot;;s:19:&quot;2012-03-15 19:23:59&quot;;s:7:&quot;expired&quot;;s:19:&quot;2039-07-01 00:00:00&quot;;}</user_data>
+    </ci_sessions>
+    <ci_sessions>
+        <session_id>b59afd7b9da895a8633784c78d746f8f</session_id>
+        <ip_address>::1</ip_address>
+        <user_agent>Mozilla/5.0 (Windows NT 6.1; rv:54.0) Gecko/20100101 Firefox/54.0</user_agent>
+        <last_activity>1502780946</last_activity>
+        <user_data>a:2:{s:9:&quot;user_data&quot;;s:0:&quot;&quot;;s:9:&quot;role_name&quot;;s:5:&quot;Guest&quot;;}</user_data>
+    </ci_sessions>
+    <ci_sessions>
+        <session_id>c83858b6ae0b81d173b99aa741a14582</session_id>
+        <ip_address>::1</ip_address>
+        <user_agent>Mozilla/5.0 (Windows NT 6.1; rv:54.0) Gecko/20100101 Firefox/54.0</user_agent>
+        <last_activity>1502780874</last_activity>
+        <user_data>a:9:{s:9:&quot;user_data&quot;;s:0:&quot;&quot;;s:9:&quot;role_name&quot;;s:13:&quot;Administrator&quot;;s:9:&quot;auth_user&quot;;s:4:&quot;1704&quot;;s:13:&quot;auth_loggedin&quot;;b:1;s:4:&quot;lang&quot;;s:2:&quot;en&quot;;s:7:&quot;unit_id&quot;;s:1:&quot;0&quot;;s:7:&quot;role_id&quot;;s:1:&quot;1&quot;;s:10:&quot;registered&quot;;s:19:&quot;2012-03-15 19:23:59&quot;;s:7:&quot;expired&quot;;s:19:&quot;2039-07-01 00:00:00&quot;;}</user_data>
+    </ci_sessions>
+    <ci_sessions>
+        <session_id>df770444b80231c2e0026ba69ae2d2ce</session_id>
+        <ip_address>::1</ip_address>
+        <user_agent>Mozilla/5.0 (Windows NT 6.1; rv:54.0) Gecko/20100101 Firefox/54.0</user_agent>
+        <last_activity>1503370629</last_activity>
+        <user_data>a:9:{s:9:&quot;user_data&quot;;s:0:&quot;&quot;;s:9:&quot;role_name&quot;;s:5:&quot;Guest&quot;;s:9:&quot;auth_user&quot;;b:0;s:13:&quot;auth_loggedin&quot;;b:0;s:4:&quot;lang&quot;;s:2:&quot;en&quot;;s:7:&quot;unit_id&quot;;s:1:&quot;1&quot;;s:7:&quot;role_id&quot;;s:1:&quot;1&quot;;s:10:&quot;registered&quot;;s:19:&quot;2012-03-15 19:23:59&quot;;s:7:&quot;expired&quot;;s:19:&quot;2039-07-01 00:00:00&quot;;}</user_data>
+    </ci_sessions>
+    <ci_sessions>
+        <session_id>ead8708950fe0b21ea89359314ded7d5</session_id>
+        <ip_address>::1</ip_address>
+        <user_agent>Mozilla/5.0 (Windows NT 6.1; rv:54.0) Gecko/20100101 Firefox/54.0</user_agent>
+        <last_activity>1502848345</last_activity>
+        <user_data>a:2:{s:9:&quot;user_data&quot;;s:0:&quot;&quot;;s:9:&quot;role_name&quot;;s:5:&quot;Guest&quot;;}</user_data>
+    </ci_sessions>
+    <ci_sessions>
+        <session_id>fa4a8921ee5ec289fa0bab0583f1ad42</session_id>
+        <ip_address>::1</ip_address>
+        <user_agent>Mozilla/5.0 (Windows NT 6.1; rv:54.0) Gecko/20100101 Firefox/54.0</user_agent>
+        <last_activity>1502781009</last_activity>
+        <user_data>a:2:{s:9:&quot;user_data&quot;;s:0:&quot;&quot;;s:9:&quot;role_name&quot;;s:5:&quot;Guest&quot;;}</user_data>
+    </ci_sessions>
+    <ci_sessions>
+        <session_id>fea6eb70b080637a5d66ed4941d0be3d</session_id>
+        <ip_address>::1</ip_address>
+        <user_agent>Mozilla/5.0 (Windows NT 6.1; rv:54.0) Gecko/20100101 Firefox/54.0</user_agent>
+        <last_activity>1502780986</last_activity>
+        <user_data>a:4:{s:9:&quot;user_data&quot;;s:0:&quot;&quot;;s:9:&quot;role_name&quot;;s:5:&quot;Guest&quot;;s:9:&quot;auth_user&quot;;b:0;s:13:&quot;auth_loggedin&quot;;b:0;}</user_data>
+    </ci_sessions>
+  <!-- Table mst_settings -->
+    <mst_settings>
+        <id>1</id>
+        <code>001/SET/08/2017</code>
+        <name>TEKVISOFT</name>
+        <address>Komp. Ujungberung Indah Blok 19-9</address>
+        <village>Cigending</village>
+        <district>Ujungberung</district>
+        <city>Bandung</city>
+        <province>Jawa Barat</province>
+        <country>Indonesia</country>
+        <phone>022-7805295</phone>
+        <fax>022-7805295</fax>
+        <mobile_phone>085659001233</mobile_phone>
+        <email>info@tekvisoft.com</email>
+        <website>www.tekvisoft.com</website>
+        <owner>Wildan Sawaludin</owner>
+        <description>www.tekvisoft.com</description>
+        <status>1</status>
+        <unit_id>1</unit_id>
+        <created_by>1</created_by>
+        <created_date>2017-08-15 04:17:44</created_date>
+        <updated_by>0</updated_by>
+        <updated_date>0000-00-00 00:00:00</updated_date>
+    </mst_settings>
+  <!-- Table mst_status -->
+    <mst_status>
+        <id>1</id>
+        <code>001/STATUS/10/2015</code>
+        <name>Aktif</name>
+        <description>Status Aktif</description>
+        <status>1</status>
+        <unit_id>1</unit_id>
+        <created_by>1</created_by>
+        <created_date>2017-08-15 15:06:24</created_date>
+        <updated_by>1</updated_by>
+        <updated_date>2017-08-15 15:06:34</updated_date>
+    </mst_status>
+    <mst_status>
+        <id>2</id>
+        <code>002/STATUS/10/2015</code>
+        <name>Non Aktif</name>
+        <description>Status Non Aktif</description>
+        <status>1</status>
+        <unit_id>1</unit_id>
+        <created_by>1</created_by>
+        <created_date>2017-08-15 15:07:28</created_date>
+        <updated_by>1</updated_by>
+        <updated_date>2017-08-15 15:07:33</updated_date>
+    </mst_status>
+  <!-- Table mst_units -->
+    <mst_units>
+        <id>1</id>
+        <code>001/UNIT/10/2015</code>
+        <name>TEKVISOFT</name>
+        <address>Komp. Ujungberung Indah Blok 19-9</address>
+        <village>Cigending</village>
+        <district>Ujungberung</district>
+        <city>Bandung</city>
+        <province>Jawa Barat</province>
+        <country>Indonesia</country>
+        <phone>022-7805295</phone>
+        <fax>022-7805295</fax>
+        <mobile_phone>085659001233</mobile_phone>
+        <email>info@tekvisoft.com</email>
+        <description>www.tekvisoft.com</description>
+        <status>1</status>
+        <unit_id>1</unit_id>
+        <created_by>1</created_by>
+        <created_date>2017-08-15 15:02:56</created_date>
+        <updated_by>0</updated_by>
+        <updated_date>0000-00-00 00:00:00</updated_date>
+    </mst_units>
+</tekvisoft-rismasys>

@@ -1,0 +1,120 @@
+.radar {
+  display: block;
+  width: 50vh;
+  height: 50vh;
+  
+}
+
+.content-radar {
+  position: relative;
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vh;
+  height: 50vh;
+}
+
+.point {
+  position: absolute;
+  color: black;
+  top: 0;
+  left: 0;
+  line-height: 0.8rem;
+  font-size: 0.7rem;
+  display: block;
+  margin-top: -0.4rem;
+  margin-left: -0.4rem;
+}
+
+.point:before {
+  content: " ";
+  background: black;
+  width: 0.5rem;
+  height: 0.5rem;
+  display: block;
+  float: left;
+  border-radius: 0.4rem;
+  margin-right: 0.2rem;
+}
+
+.category {
+  color: black;
+  text-transform: uppercase;
+  font-size: 1rem;
+  position: absolute;
+  opacity: 0.8;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.category-0 {
+  bottom: 20%;
+  right: -15%;
+  -ms-transform: rotate(300deg);
+  -webkit-transform: rotate(300deg);
+  transform: rotate(300deg);
+}
+
+.category-1 {
+  bottom: 0;
+  left: 15%;
+  -ms-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+
+.category-2 {
+  bottom: 50%;
+  left: -15%;
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.category-3 {
+  top: 0;
+  left: 15%;
+  -ms-transform: rotate(340deg);
+  -webkit-transform: rotate(340deg);
+  transform: rotate(340deg);
+}
+
+.category-4 {
+  top: 15%;
+  right: 0;
+  -ms-transform: rotate(50deg);
+  -webkit-transform: rotate(50deg);
+  transform: rotate(50deg);
+}
+
+.circle-hold {
+  fill: #3FC380;
+  stroke: white;
+}
+
+.description-container {
+  background: rgba(0,0,0,0.8);
+  color: white;
+  padding: 1.5rem 2rem;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0 0 2rem rgba(0,0,0,0.4);
+  display: none;
+}
+
+.description-container--top {
+  top: 1rem;
+}
+
+.description-container--bottom {
+  bottom: 1rem;
+}
+
+.description-title {
+  font-weight: bold;
+}
+
+.description {
+  color: rgba(120,120,120,1);
+  line-height: 1.2rem;
+}
