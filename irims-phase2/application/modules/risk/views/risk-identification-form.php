@@ -396,11 +396,12 @@ Risk Assessment Form
 									</div>
 									<div class="form-group">
 										<label class="control-label col-md-3">Sasaran Organisasi<span class="required">*</span></label>
-										<div class="col-md-6">
-											<textarea class="form-control input-circle wysihtml5" rows="6" id="OBJECTIVE" name="OBJECTIVE"><?php echo !empty($OBJECTIVE) ? $OBJECTIVE : ''; ?></textarea>
+										<div class="col-md-6" >
+											
+											<textarea class="form-control input-circle wysihtml5" rows="6" id="OBJECTIVE" name="OBJECTIVE" ></textarea>
 										</div>
 										<div class="col-md-2">
-											<span id="tolSo" class="tooltips" data-container="body" data-placement="right" data-html="false" data-original-title="">
+											<span id="tolSo" class="tooltips" data-container="body" data-placement="right" data-html="false" data-original-title="Sasan organosasi">
 												<a href="angularjs" target="_blank">
 												<i class="icon-info"></i>
 												</a>
@@ -412,7 +413,7 @@ Risk Assessment Form
 										<div class="col-md-6">
 											<div class="input-group">
 												<span class="input-group-addon input-circle-left"><i class="fa fa-database"></i></span>
-												<select class="form-control select2me" id="KPI" name="KPI">
+												<select class="form-control select2me" id="KPI" name="KPI" >
 													<?php foreach($KPI_DATA as $key=>$val): ?>
 													<?php if($key==$KPI) { ?>
 													<option value="<?php echo !empty($key) ? $key : ''; ?>" selected="selected"><?php echo !empty($val) ? $val : ''; ?></option>
@@ -430,7 +431,7 @@ Risk Assessment Form
 											<textarea class="form-control input-circle wysihtml5" rows="6" id="WORK_PROGRAM" name="WORK_PROGRAM"><?php echo !empty($WORK_PROGRAM) ? $WORK_PROGRAM : ''; ?></textarea>
 										</div>
 										<div class="col-md-2">
-											<span id="tolPk" class="tooltips" data-container="body" data-placement="right" data-html="false" data-original-title="">
+											<span id="tolPk" class="tooltips" data-container="body" data-placement="right" data-html="false" data-original-title="Sasan organosasi">
 												<a href="angularjs" target="_blank">
 												<i class="icon-info"></i>
 												</a>
@@ -445,7 +446,7 @@ Risk Assessment Form
 										</div>
 										<div class="col-md-2">
 
-											<span id ="tolAc" class="tooltips" data-container="body" data-placement="right" data-html="false" data-original-title="">
+											<span id ="tolPk" class="tooltips" data-container="body" data-placement="right" data-html="false" data-original-title="Activitas">
 												<a href="angularjs" target="_blank">
 												<i class="icon-info"></i>
 												</a>
@@ -459,7 +460,7 @@ Risk Assessment Form
 											<textarea class="form-control input-circle wysihtml5" rows="6" name="SCOPE"><?php echo !empty($SCOPE) ? $SCOPE : ''; ?></textarea>
 										</div>
 										<div class="col-md-2">
-											<span id="tolLing" class="tooltips" data-container="body" data-placement="right" data-html="false" data-original-title="">
+											<span id="tolLing" class="tooltips" data-container="body" data-placement="right" data-html="false" data-original-title="Sasan organosasi">
 												<a href="angularjs" target="_blank">
 												<i class="icon-info"></i>
 												</a>
@@ -472,7 +473,7 @@ Risk Assessment Form
 											<textarea class="form-control input-circle wysihtml5" rows="6" name="CRITERIA"><?php echo !empty($CRITERIA) ? $CRITERIA : ''; ?></textarea>
 										</div>
 										<div class="col-md-2">
-											<span id="tolKri" class="tooltips" data-container="body" data-placement="right" data-html="false" data-original-title="">
+											<span id="tolkri" class="tooltips" data-container="body" data-placement="right" data-html="false" data-original-title="Sasan organosasi">
 												<a href="angularjs" target="_blank">
 												<i class="icon-info"></i>
 												</a>
@@ -485,7 +486,7 @@ Risk Assessment Form
 											<textarea class="form-control input-circle wysihtml5" rows="6" name="EXTERNAL_CONTEXT"><?php echo !empty($EXTERNAL_CONTEXT) ? $EXTERNAL_CONTEXT : ''; ?></textarea>
 										</div>
 										<div class="col-md-2">
-											<span id="tolKe" class="tooltips" data-container="body" data-placement="right" data-html="false" data-original-title="">
+											<span id="tolKe" class="tooltips" data-container="body" data-placement="right" data-html="false" data-original-title="Sasan organosasi">
 												<a href="angularjs" target="_blank">
 												<i class="icon-info"></i>
 												</a>
@@ -498,7 +499,7 @@ Risk Assessment Form
 											<textarea class="form-control input-circle wysihtml5" rows="6" name="INTERNAL_CONTEXT"><?php echo !empty($INTERNAL_CONTEXT) ? $INTERNAL_CONTEXT : ''; ?></textarea>
 										</div>
 										<div class="col-md-2">
-											<span id="tolKi" class="tooltips" data-container="body" data-placement="right" data-html="false" data-original-title="">
+											<span id="tolSo" class="tooltips" data-container="body" data-placement="right" data-html="false" data-original-title="Sasan organosasi">
 												<a href="angularjs" target="_blank">
 												<i class="icon-info"></i>
 												</a>
@@ -522,11 +523,11 @@ Risk Assessment Form
 											<div id="editor1_error">
 											</div>
 											<div class="col-md-2">
-											<!-- <span id="tolSo" class="tooltips" data-container="body" data-placement="right" data-html="false" data-original-title="Sasan organosasi">
+											<span id="tolSo" class="tooltips" data-container="body" data-placement="right" data-html="false" data-original-title="Sasan organosasi">
 												<a href="angularjs" target="_blank">
 												<i class="icon-info"></i>
 												</a>
-											</span> -->
+											</span>
 										</div>
 										</div>
 									</div>	
@@ -1010,28 +1011,17 @@ Risk Assessment Form
 <script>
 	jQuery(document).ready(function() {
 		$.ajax({
-		url: "<?php echo site_url('risk/risk_identification/GetTooltipsData');?>",
+		url: "<?php echo site_url('risk/risk_identification/test');?>",
         type : "POST",
         dataType : "json",        
         success : function(data) {
 			
 			for (i = 0; i < data.length; ++i) {
 	            	var res = data[i];
-					
                     if (res.label_name =='Sasaran Organisasi')
 						document.getElementById('tolSo').setAttribute('data-original-title', res.name);
-					if (res.label_name =='Program Kerja')
-						document.getElementById('tolPk').setAttribute('data-original-title', res.name);
-					if (res.label_name =='Aktivitas')
-						document.getElementById('tolAc').setAttribute('data-original-title', res.name);
-				    if (res.label_name =='Lingkup')
-				    document.getElementById('tolLing').setAttribute('data-original-title', res.name);
-					if (res.label_name =='Kriteria')
-						document.getElementById('tolKri').setAttribute('data-original-title', res.name);
-					if (res.label_name =='Konteks Eksternal')
-						document.getElementById('tolKe').setAttribute('data-original-title', res.name);	
-					if (res.label_name =='Konteks Internal')
-						document.getElementById('tolKi').setAttribute('data-original-title', res.name);	
+						zzzif (res.label_name =='Sasaran Organisasi')
+						document.getElementById('tolSo').setAttribute('data-original-title', res.name);
 					
 	            }
         },
@@ -1068,9 +1058,11 @@ Risk Assessment Form
 	});
 
 	var FormWizardIdentification = function () {
+		
 	    return {
 	        //main function to initiate the module
 	        init: function () {
+				
 	            if (!jQuery().bootstrapWizard) {
 	                return;
 	            }
@@ -1081,11 +1073,39 @@ Risk Assessment Form
 	            var redirect_url    = form.attr("data-redirect-url");
 
 	            form.validate({
+					ignore: ":hidden:not(textarea)",
 	                doNotHideMessage: true, //this option enables to show the error/success messages on tab switch.
 	                errorElement: 'span', //default input error message container
 	                errorClass: 'help-block help-block-error', // default input error message class
 	                focusInvalid: false, // do not focus the last invalid input
 	                rules: {
+						OBJECTIVE: {
+	                        required: true
+	                    },
+						KPI: {
+	                        required: true
+	                    },
+						WORK_PROGRAM: {
+	                        required: true
+	                    },
+						ACTIVITY: {
+	                        required: true
+	                    },
+						SCOPE: {
+	                        required: true
+	                    },
+						ACTIVITY: {
+	                        required: true
+	                    },
+						CRITERIA: {
+	                        required: true
+	                    },
+						EXTERNAL_CONTEXT: {
+	                        required: true
+	                    },
+						INTERNAL_CONTEXT: {
+	                        required: true
+	                    },
 	                    HAZARD: {
 	                        required: true
 	                    },
@@ -1212,6 +1232,7 @@ Risk Assessment Form
 	            }
 
 	            var ajaxPostData = function(form, redirect){
+					
 	            	$.blockUI();
 
 	                $.ajax({
@@ -1257,6 +1278,8 @@ Risk Assessment Form
 	                onNext: function (tab, navigation, index) {
 	                    success.hide();
 	                    error.hide();
+						if ($('#OBJECTIVE').val(""))
+						  form.valid()= false;
 
 	                    if (form.valid() == false) {
 	                        return false;
