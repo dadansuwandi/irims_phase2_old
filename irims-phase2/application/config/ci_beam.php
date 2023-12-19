@@ -75,7 +75,7 @@ $config['main_nav'] = array(
 		)
     ),
     'report' => array('icon' => 'icon-docs', 'label' => 'Risk Report', 'sub_nav' => array(
-            'report/risk_assessment_report/register_card' => array('icon' => 'icon-graph', 'label' => 'Risk Register Card'),
+            'report/risk_assessment_register_card/register_card' => array('icon' => 'icon-graph', 'label' => 'Risk Register Card'),
             'report/risk_assessment_report/index' => array('icon' => 'icon-graph', 'label' => 'Risk Progress'),
             'report/risk_assessment_report/head' => array('icon' => 'icon-graph', 'label' => 'Risk Progress'),
             'report/risk_assessment_report/owner' => array('icon' => 'icon-graph', 'label' => 'Risk Progress'),
