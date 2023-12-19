@@ -397,7 +397,7 @@ Risk Assessment Form
 									<div class="form-group">
 										<label class="control-label col-md-3">Sasaran Organisasi<span class="required">*</span></label>
 										<div class="col-md-6">
-											<textarea class="form-control input-circle wysihtml5" rows="6" id="OBJECTIVE" name="OBJECTIVE"><?php echo !empty($OBJECTIVE) ? $OBJECTIVE : ''; ?></textarea>
+											<textarea class="Tab1Group form-control input-circle wysihtml5" rows="6" id="OBJECTIVE" name="OBJECTIVE"><?php echo !empty($OBJECTIVE) ? $OBJECTIVE : ''; ?></textarea>
 										</div>
 										<div class="col-md-2">
 											<span id="tolSo" class="tooltips" data-container="body" data-placement="right" data-html="false" data-original-title="">
@@ -704,14 +704,14 @@ Risk Assessment Form
 											<div class="form-group">
 												<label class="control-label col-md-3">Rencana Perlakuan Risiko (Kemungkinan) <span class="required">*</span></label>
 												<div class="col-md-6">
-													<textarea class="form-control input-circle wysihtml5hidden" rows="6" name="RENCANA_PENGENDALIAN[]" data-required="1"><?php //echo !empty($RENCANA_PENGENDALIAN) ? $RENCANA_PENGENDALIAN : ''; ?></textarea>
+													<textarea class="form-control input-circle wysihtml5hidden" rows="6" name="RENCANA_PENGENDALIAN[]" data-required="1"><?php echo !empty($RENCANA_PENGENDALIAN) ? $RENCANA_PENGENDALIAN : ''; ?></textarea>
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="control-label col-md-3">Rencana Perlakuan Risiko (Dampak) <span class="required">*</span></label>
 												<div class="col-md-6">
-													<textarea class="form-control input-circle wysihtml5hidden" rows="6" name="DAMPAK_RENCANA_PENGENDALIAN[]" data-required="1"><?php //echo !empty($DAMPAK_RENCANA_PENGENDALIAN) ? $DAMPAK_RENCANA_PENGENDALIAN : ''; ?></textarea>
+													<textarea class="form-control input-circle wysihtml5hidden" rows="6" name="DAMPAK_RENCANA_PENGENDALIAN[]" data-required="1"><?php echo !empty($DAMPAK_RENCANA_PENGENDALIAN) ? $DAMPAK_RENCANA_PENGENDALIAN : ''; ?></textarea>
 												</div>
 											</div>
 											
@@ -848,14 +848,14 @@ Risk Assessment Form
 											<div class="form-group">
 												<label class="control-label col-md-3">Rencana Perlakuan Risiko (Kemungkinan) <span class="required">*</span></label>
 												<div class="col-md-6">
-													<textarea class="form-control input-circle wysihtml5" rows="6" name="RENCANA_PENGENDALIAN[]" data-required="1"><?php //echo !empty($RENCANA_PENGENDALIAN) ? $RENCANA_PENGENDALIAN : ''; ?></textarea>
+													<textarea class="form-control input-circle wysihtml5" rows="6" name="RENCANA_PENGENDALIAN" ><?php echo !empty($RENCANA_PENGENDALIAN) ? $RENCANA_PENGENDALIAN : ''; ?></textarea>
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="control-label col-md-3">Rencana Perlakuan Risiko (Dampak) <span class="required">*</span></label>
 												<div class="col-md-6">
-													<textarea class="form-control input-circle wysihtml5" rows="6" name="DAMPAK_RENCANA_PENGENDALIAN[]" data-required="1"><?php //echo !empty($DAMPAK_RENCANA_PENGENDALIAN) ? $DAMPAK_RENCANA_PENGENDALIAN : ''; ?></textarea>
+													<textarea class="form-control input-circle wysihtml5" rows="6" name="DAMPAK_RENCANA_PENGENDALIAN" ><?php echo !empty($DAMPAK_RENCANA_PENGENDALIAN) ? $DAMPAK_RENCANA_PENGENDALIAN : ''; ?></textarea>
 												</div>
 											</div>
 
@@ -1081,7 +1081,7 @@ Risk Assessment Form
 	            var success         = $('.alert-success', form);
 	            var redirect_url    = form.attr("data-redirect-url");
 
-	            form.validate({
+	       form.validate({
 					ignore: ":hidden:not(textarea)",
 	                doNotHideMessage: true, //this option enables to show the error/success messages on tab switch.
 	                errorElement: 'span', //default input error message container
@@ -1101,9 +1101,6 @@ Risk Assessment Form
 	                        required: true
 	                    },
 						SCOPE: {
-	                        required: true
-	                    },
-						ACTIVITY: {
 	                        required: true
 	                    },
 						CRITERIA: {
@@ -1212,6 +1209,8 @@ Risk Assessment Form
 
 	            });
 
+				
+
 	            var handleTitle = function(tab, navigation, index) {
 	                var total = navigation.find('li').length;
 	                var current = index + 1;
@@ -1287,8 +1286,35 @@ Risk Assessment Form
 	                onNext: function (tab, navigation, index) {
 	                    success.hide();
 	                    error.hide();
-						if ($('#OBJECTIVE').val(""))
-						  form.valid()= false;
+						if (index == 1){
+							$('#tab2 .wysihtml5').each(function() {
+        						$(this).rules('remove');
+    						});
+							$('#tab3 .wysihtml5').each(function() {
+        						$(this).rules('remove');
+    						});
+						}
+						
+						if (index == 2){
+							$('#tab2 .wysihtml5').each(function() {
+        						$(this).rules('add', {
+            					required: true,
+        						});
+    						});
+
+							$('#tab3 .wysihtml5').each(function() {
+        						$(this).rules('remove');
+    						});
+						}
+						if (index == 3){
+							$('#tab3 .wysihtml5').each(function() {
+        						$(this).rules('add', {
+            					required: true,
+        						});
+    						});
+
+							
+						}
 
 	                    if (form.valid() == false) {
 	                        return false;
@@ -1327,6 +1353,7 @@ Risk Assessment Form
 	    };
 
 	}();
+
 
 	/*untuk clone form*/
 	var count=<?php echo $count;?>;
