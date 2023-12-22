@@ -3,6 +3,7 @@
 class Role_model extends MY_Model 
 {
 	protected $table_name = 'acl_roles';
+	protected $table_name_map = 'ac_user_role_maping';
 	protected $role_parents_table = 'acl_role_parents';
 	protected $rules_table = 'acl_rules';
 	
@@ -16,6 +17,10 @@ class Role_model extends MY_Model
 				->order_by($this->table_name . '.id', 'ASC')
 				->order_by($this->role_parents_table . '.order', 'ASC');
 		return $this->db->get($this->table_name)->result();
+	}
+	function get_list_map()
+	{
+		return $this->db->get($this->table_name_map)->result();
 	}
 	
 	/**
@@ -68,6 +73,12 @@ class Role_model extends MY_Model
 		
 		return $row;
 	}
+	function get_data_by_id($id)
+	{
+		$row = $this->db->get_where($this->	$table_name_map, array('id' => $id))->row();
+		
+		return $row;
+	}
 	
 	/**
 	 * Get role by name
@@ -107,8 +118,12 @@ class Role_model extends MY_Model
 	 * @param array $attributes
 	 * @return void
 	 */
+	
 	function update($role_id = 0, $attributes = array())
 	{
+       
+	
+
 		$parents = array();
 		if (isset($attributes['parents']))
 		{
@@ -165,6 +180,11 @@ class Role_model extends MY_Model
 		$this->db->delete($this->rules_table, array('role_id' => $role_id));
 		$this->db->delete($this->role_parents_table, array('role_id' => $role_id));
 		$this->db->delete($this->table_name, array('id' => $role_id));
+	}
+	function deleteMap($role_id)
+	{
+		
+		$this->db->delete($this->table_name_map, array('UserMapID' => $role_id));
 	}
 }
 

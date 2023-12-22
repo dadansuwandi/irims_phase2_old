@@ -152,7 +152,7 @@ $config['main_nav'] = array(
     ),
     'auth' => array('icon' => 'icon-user', 'label' => 'User', 'sub_nav' => array(
 			'auth/user/index' => array('icon' => 'icon-users', 'label' => 'List of Users'),
-			//'auth/user/activity' => array('icon' => 'icon-book-open', 'label' => '*User Activity'),
+			'auth/role_map/index' => array('icon' => 'icon-book-open', 'label' => 'User Roles'),
 		)
     ),
     'acl' => array('icon' => 'icon-wrench', 'label' => 'Setting', 'sub_nav' => array(

@@ -1045,7 +1045,7 @@
         }
 
         function register_card() {
-            echo 'Hello World!';
+           
             $result = array();
 
             $search           = false;

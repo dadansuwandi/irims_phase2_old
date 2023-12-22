@@ -100,27 +100,7 @@ Risk Register Card
 						<th class="hidden-xs">Rincian</th> 
 					</tr>
 				</thead>
-				<!-- <tbody>
-					<?php
-					$no = 1;
-					foreach ($rows as $risk_item_id => $row):
-						$risk_item = $this->risk_item_model->get_by_id($risk_item_id);
-					?>
-						<?php
-							foreach($row['data'] as $d){
-						?>
-						<tr>
-							<td><?php echo $no++; ?></td>
-							<td><?php echo $d->risk_register_number?></td>
-							<td><?php echo $risk_item->name;?></td>
-							<td><?php echo $d->level_name?></td>
-							<td><a href="<?php echo site_url('report/risk_assessment_report/register_card_detail?tahun='.$_POST['tahun'].'&risk_item_id='.$d->RISK_ITEM_ID.'&risk_id='.$d->risk_id.'&risk_no='.$d->risk_register_number.'&risk_level='.$this->risk_probability_model->get_by_id($d->MITIGASI_RISK_K_ID)->rating_value.$this->risk_impact_model->get_by_id($d->MITIGASI_RISK_D_ID)->alphabet); ?>" target="_blank"><font color="blue"><i class="fa fa-search" aria-hidden="true"></i><?php echo 'view'?></font></a></td>
-						</tr>
-						<?php
-							}
-						?>
-					<?php endforeach; ?>
-				</tbody> -->
+				
 			</table>
 		</div>
 	</div>
