@@ -68,19 +68,18 @@ Risk Register Card
 				</div>
 				<!--/row-->
 			</div>
-			
-		</form>
-		<div class="form-actions">
-				<button id="btnFilter"  type="submit" class="btn blue"><i class="fa fa-check"></i> Filter</button>
+			<div class="form-actions">
+				<button type="submit" class="btn blue"><i class="fa fa-check"></i> Filter</button>
 				<a href="<?php echo site_url('report/risk_assessment_report/register_card'); ?>" class="btn default">Reset</a> 
 				<a href="<?php echo site_url('report/risk_assessment_report/register_card_pdf?tahun='.$_POST['tahun'].'&risk_id='.$_POST['risk_id']); ?>" class="btn red">Export to PDF<i class="fa fa-file-pdf-o"></i></a>
 			</div>
+		</form>
 		<!-- END FORM-->
 	</div>
 </div>
 <!-- END FORM FILTER -->
 
-
+<?php if($search){?>
 <div class="portlet box red">
 	<div class="portlet-title">
 		<div class="caption">
@@ -95,9 +94,9 @@ Risk Register Card
 					<tr>
 						<th class="hidden-xs">No</th>
 						<th class="hidden-xs">Risk Number</th>
-						 <th class="hidden-xs">Risk Register</th>
+						<th class="hidden-xs">Risk Register</th>
 						<th class="hidden-xs">Risk Level</th>
-						<th class="hidden-xs">Rincian</th> 
+						<th class="hidden-xs">Rincian</th>
 					</tr>
 				</thead>
 				
@@ -105,7 +104,7 @@ Risk Register Card
 		</div>
 	</div>
 </div>
-
+<?php }?>
 
 <style>
 	.overFlowTable{
@@ -121,31 +120,6 @@ Risk Register Card
 
 
 <script type="text/javascript" charset="utf-8">
-  $("#btnFilter").click(function (){
-
-	$.ajax({
-                type: "POST",
-                url: "<?php echo site_url('report/risk_assessment_register_card/filter');?>",
-                //data: "{'Id':'" + id + "'}",
-                dataType: "json",
-                success: function (data) {
-				var dtRisk = new Object();
-				for (var i = 0; i < data.length; i++) {
-					dtRisk.No = i+1;
-					dtRisk.risk_register_number = data[i]["risk_register_number"];
-					dtRisk.risk_register = data[i]["risk_register"];
-					dtRisk.level_name = data[i]["level_name"];
-					dtRisk.rincian = '<a href="<?php echo site_url('report/risk_assessment_report/register_card_detail?tahun='.$_POST['tahun'].'&risk_item_id='.$d->RISK_ITEM_ID.'&risk_id='.$d->risk_id.'&risk_no='.$d->risk_register_number.'&risk_level='.$this->risk_probability_model->get_by_id($d->MITIGASI_RISK_K_ID)->rating_value.$this->risk_impact_model->get_by_id($d->MITIGASI_RISK_D_ID)->alphabet); ?>" target="_blank"><font color="blue"><i class="fa fa-search" aria-hidden="true"></i><?php echo 'view'?></font></a>';
-					$('.table').dataTable().fnAddData(dtRisk);
-					//table.fnAddData(Kelas);
-				}
-                },
-                error: function (xhr) {
-					//alert('Request Status: ' + xhr.status + ' Status Text: ' + xhr.statusText + ' ' + xhr.responseText);   
-                }
-            });
-  });
-
 	
 		$('.table  thead tr')
         .addClass('filters')
@@ -159,13 +133,6 @@ Risk Register Card
         buttons: [
              'csv', 'excel', 'pdf'
         ],
-		"aoColumns": [
-		{ "mDataProp" : "No"},
-        { "mDataProp" : "risk_register_number"},
-		{ "mDataProp" : "risk_register"},
-        { "mDataProp" : "level_name"},
-        { "mDataProp" : "rincian"}
-        ],
         initComplete: function () {
             var api = this.api();
             // For each column
@@ -173,7 +140,6 @@ Risk Register Card
                 .columns()
                 .eq(0)
                 .each(function (colIdx) {
-					if (colIdx == 0 || colIdx == 4 ) return;
                     // Set the header cell to contain the input element
                     var cell = $('.filters th').eq(
                         $(api.column(colIdx).header()).index()
