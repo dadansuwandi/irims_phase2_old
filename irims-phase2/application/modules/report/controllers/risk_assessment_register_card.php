@@ -1132,6 +1132,8 @@
             LEFT JOIN `mst_risk_values` ON `tx_risk_identification`.`RESIDUAL_RISK_K_ID`=`mst_risk_values`.`risk_probability_id` AND `tx_risk_identification`.`RESIDUAL_RISK_D_ID`=`mst_risk_values`.`risk_impact_id` 
             LEFT JOIN `mst_risk_levels` ON `mst_risk_values`.`risk_level_id`=`mst_risk_levels`.`id`
             WHERE 
+                `tx_risk_identification`.`TAHUN`='2021' AND 
+                `mst_risk_items`.`risk_id`='1' AND 
                 `tx_risk_identification`.`TAHUN`= $tahun AND 
                 `mst_risk_items`.`risk_id`= $risk_id AND 
                 `tx_risk_identification`.`STATUS_DOKUMEN_ID` >= 4 

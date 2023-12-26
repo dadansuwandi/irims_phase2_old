@@ -46,14 +46,14 @@ Risk Register Card
 					<div class="col-md-4">
 						<div class="form-group">
 							<label class="control-label">Years</label>
-							<input type="text" id ="txtTahun" class="form-control" name="tahun" value="<?php echo !empty($tahun) ? $tahun : date('Y')?>">
+							<input type="text" class="form-control" name="tahun" value="<?php echo !empty($tahun) ? $tahun : date('Y')?>">
 						</div>
 					</div>
 
 					<div class="col-md-4">
 						<div class="form-group">
-							<label class="control-label">Risk Register</label>
-							<select class="form-control select2me" id="risk_id" name="risk_id" required="required">
+							<label class="control-label">Risk Register test</label>
+							<select class="form-control select2me" name="risk_id" required="required">
 								<?php foreach($risk as $key=>$val): ?>
 								<?php if($key==$risk_id) { ?>
 								<option value="<?php echo !empty($key) ? $key : ''; ?>" selected="selected"><?php echo !empty($val) ? $val : ''; ?></option>
@@ -122,14 +122,11 @@ Risk Register Card
 
 <script type="text/javascript" charset="utf-8">
   $("#btnFilter").click(function (){
-	var tahun = $("#txtTahun").val();
-	var risk_id = $("#risk_id").val();
-
 
 	$.ajax({
                 type: "POST",
                 url: "<?php echo site_url('report/risk_assessment_register_card/filter');?>",
-                data: {tahun:  tahun,risk_id:risk_id},
+                //data: "{'Id':'" + id + "'}",
                 dataType: "json",
                 success: function (data) {
 				var dtRisk = new Object();
